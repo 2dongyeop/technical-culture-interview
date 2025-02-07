@@ -21,6 +21,18 @@
 - [synchronized 과 ReentrantLock](java/java_synchronized_ReentrantLock.md)
 - [JVM Cold Start 최적화를 위해 어떤 접근 방식을 사용했나요?](java/java_cold_start.md)
 
+## Spring
+- [Spring Bean은 무엇이며, 생명주기는 어떻게 되는가?](spring/spring_bean_%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
+- [의존성 주입 방식 비교](spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
+- [Spring DI, IoC, AOP](spring/spring_di_ioc_aop.md)
+- [Spring boot는 싱글톤 패턴으로 돌아가는데 이에 대해 설명하고, 싱글톤 패턴이 무엇이며 다른 알고 있는 패턴이 있는가?](spring/spring_singleton.md)
+- [JPA는 무엇이며 어떤 특징/장점이 있는가?](spring/spring_what_is_jpa.md)
+- [Transaction이란 무엇인가? @Transaction 애너테이션의 주요 옵션에 대해 설명](spring/spring_transaction.md)
+- [영속성 컨텍스트란 무엇인가?](spring/spring_context.md)
+- [N+1 문제와 해결책](spring/spring_jpa_n1.md)
+- [JPA OSIV(Open Session In View) 설정]
+
+
 <br/>
 
 ## 인성 면접
