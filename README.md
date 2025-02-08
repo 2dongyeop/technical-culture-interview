@@ -22,6 +22,7 @@
 - [JVM Cold Start 최적화를 위해 어떤 접근 방식을 사용했나요?](java/java_cold_start.md)
 
 ## Spring
+
 - [Spring Bean은 무엇이며, 생명주기는 어떻게 되는가?](spring/spring_bean_%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
 - [의존성 주입 방식 비교](spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
 - [Spring DI, IoC, AOP](spring/spring_di_ioc_aop.md)
@@ -30,7 +31,13 @@
 - [Transaction이란 무엇인가? @Transaction 애너테이션의 주요 옵션에 대해 설명](spring/spring_transaction.md)
 - [영속성 컨텍스트란 무엇인가?](spring/spring_context.md)
 - [N+1 문제와 해결책](spring/spring_jpa_n1.md)
-- [JPA OSIV(Open Session In View) 설정]
+- [JPA OSIV(Open Session In View) 설정](spring/spring_jpa_osiv.md)
+- [Spring Boot 2.x와 3.x의 주요 차이점](spring/spring_boot_2_3.md)
+- [Layered Architecture & Hexagonal Architecture](spring/spring_architecture.md)
+- [Monolithic & MSA](spring/spring_monolithic_msa.md)
+- [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](spring/spring_feign.md)
+- [Retry 정책을 설계할 때 고려사항](spring/spring_retry.md)
+- [분산락(Distributed Lock) 개념 및 적용 방법](spring/spring_lock.md)
 
 
 <br/>
