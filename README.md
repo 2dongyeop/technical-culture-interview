@@ -4,7 +4,29 @@
 
 ### 목차
 
-작성 예정.
+#### [기술 면접](#기술-면접)
+
+1. [CS](#1-cs)
+    - [1-1. Java](#1-1-java)
+    - [1-2. Spring](#1-2-spring)
+    - [1-3. JPA](#1-3-jpa)
+    - [1-4. Database](#1-4-database)
+    - [1-5. Network](#1-5-network)
+    - [1-6. 인프라/운영/안정성](#1-6-인프라운영안정성)
+
+2. [프로젝트 경험](#2-프로젝트-경험)
+
+    - [2-1. 공통](#2-1-공통)
+    - [2-2. 문자 전송 클라이언트 변경](#2-2-문자-전송-클라이언트-변경)
+    - [2-3. 송아리에어 서브사용자 모니터링 기능 개발](#2-3-송아리에어-서브사용자-모니터링-기능-개발)
+    - [2-4. 서비스 복구 및 백업 프로세스 설립](#2-4-서비스-복구-및-백업-프로세스-설립)
+    - [2-5. 사내 온프레미스 서버 이관](#2-5-사내-온프레미스-서버-이관)
+    - [2-6. 송아리 프리미엄정기 구독 서비스 개발](#2-6-송아리-프리미엄정기-구독-서비스-개발)
+    - [2-7. AWS RDS 모니터링 시스템 구축](#2-7-aws-rds-모니터링-시스템-구축)
+    - [2-8. 이미지 리사이징 처리 서버 구축](#2-8-이미지-리사이징-처리-서버-구축)
+    - [2-9. 송아리당뇨 API Server 마이그레이션](#2-9-송아리당뇨-api-server-마이그레이션)
+
+#### [인성 면접](#인성-면접)
 
 <br/>
 
@@ -37,9 +59,11 @@
 - [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
 - [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
 - [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](cs/spring/spring_feign.md)
-- [**Retry 정책을 설계할 때 고려사항**](cs/spring/spring_retry.md)
 - [분산락(Distributed Lock) 개념 및 적용 방법](cs/spring/spring_lock.md)
 - [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
+- [Spring Cloud Config Server의 장단점](cs/spring/spring_cloud_config.md)
+- [Circuit Breaker 패턴이 필요한 이유 & Spring Cloud Resilience4j 주요 기능](cs/spring/spring_circuit_breaker.md)
+- [Spring Cloud MSA 관련 모든것](https://github.com/2dongyeop/spring-cloud-msa)
 
 ### 1-3. JPA
 
@@ -56,7 +80,6 @@
 - [정규화/반정규화](cs/database/db_normalization.md)
 - [인메모리 DB가 더 빠른 이유](cs/database/db_inmemory.md)
 - [**인덱스가 있음에도 성능이 더 느린 경우가 있다. 이에 대해 설명해보시오.**](cs/database/db_index_invalid.md)
-- [mysqldump를 활용한 백업 자동화는 어떻게 구성했나요?](cs/database/db_mysqlbackup.md)
 
 ### 1-5. Network
 
@@ -83,12 +106,72 @@
 
 ## 2. 프로젝트 경험
 
+> ### 안내
+> 개인 프로젝트 경험 관련
+>
+내용은 [첨부한 이력서]((resource/%E1%84%89%E1%85%A5%E1%84%87%E1%85%A5_%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8C%E1%85%A1_%E1%84%8B%E1%85%B5%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%A7%E1%86%B8_%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%89%E1%85%A5.pdf))
+> 를 기반으로 키워드를 추출하여 작성했습니다. 개인 경험이다보니 겹치는 내용이 없을 지도 모릅니다.
+>
+> 어느 문제를 어떻게 접근했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
+>
+>
+> ### 답변 팁
+> 1. 답변을 아래와 같은 순서로 진행하면 좋습니다. <br/>
+     a. **진행 배경 → 기술 선택 및 이유 → 해결 방법 및 고민 내용 → 성과 혹은 아쉬운 점**
+> 2. **어떤 역량을 평가하는 질문인지를 구분**하여 역량별 답변을 준비하는 것도 좋은 방법입니다. <br/>
+     a. 의사결정 과정 / 문제 해결 능력 / 협업 경험
+
 ### 2-1. 공통
+
+- [신기능 개발 시에 개발 프로세스와 각 단계별 역할을 설명해주세요.](project/common/develop_process.md)
 - [여러 부하 테스트 툴(nGrinder, JMeter, k6, Locust) 중에서 nGrinder를 선택한 이유](project/common/load_test.md)
-- [테스트 코드 작성 원칙 및 전략이 있는지?]
+- [여러 APM 툴(Pinpoint, Datadog, Jaeger, New Relic, Zipkin) 중 Pinpoint을 선택한 이유](project/common/apm.md)
+- [테스트 코드 작성 원칙 및 전략이 있는지?](project/common/test_code.md)
+- [**Retry 정책을 설계할 때 고려사항**](cs/spring/spring_retry.md)
 
-### 당뇨
+### 2-2. 문자 전송 클라이언트 변경
 
+- [DB Agent 방식 vs API 방식 비교](project/2-2/db_agent_api.md)
+- [여러 문자 전송 플랫폼 중, NCP를 선택한 이유](project/2-2/ncp.md)
+- [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는?](project/2-2/reactive_feign.md)
+- [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
+
+### 2-3. 송아리에어 서브사용자 모니터링 기능 개발
+
+- [SSE, WebSocket, MQTT의 동작 방식을 설명해주세요.](project/2-3/sse_websocket_mqtt.md)
+- [실시간 알림임에도 REST 방식을 선택한 이유는 무엇인가요?](project/2-3/realtime_rest.md)
+
+### 2-4. 서비스 복구 및 백업 프로세스 설립
+
+- [서비스 복구/백업 프로세스 설립시 고려사항](project/2-4/recover.md)
+- [AWS EC2 시작 템플릿 백업 시 기존 설정(인스턴스 사양, 네트워크, 보안그룹, EBS 사양) 유지 이유](project/2-4/launch_template_same_config.md)
+- [AWS CLI 기술 선택 이유(AWS 생명주기관리자, Terraform을 사용하지 않은 이유)](project/2-4/aws_cli.md)
+- [n8n을 선택하여 추가적인 헬스체크를 구축한 이유](project/2-4/n8n.md)
+- [AMI 버저닝 관리를 통해 얻은 이점은 무엇인가요?](project/2-4/ami_versioning.md)
+- [EC2 인스턴스 장애 상황에서 복구를 자동화한 방법은 무엇인가요?](project/2-4/recover_process.md)
+
+### 2-5. 사내 온프레미스 서버 이관
+
+- [mysqldump를 활용한 백업 자동화는 어떻게 구성했나요?](cs/database/db_mysqlbackup.md)
+- [Nginx Brotli 압축 방식을 적용한 이유가 무엇인가요?](project/2-5/nginx_brotli.md)
+- [프로젝트별 JDK 버전 상이 문제를 해결하기 위해 Docker 컨테이너 환경을 어떻게 구축/운영했나요?](project/2-5/docker_jdk.md)
+
+### 2-6. 송아리 프리미엄(정기 구독 서비스) 개발
+
+- [구독/결제 시스템에서 안정성 확보 및 상태 관리 전략을 어떻게 구성했나요?](project/2-6/subscription_stability.md)
+
+### 2-7. AWS RDS 모니터링 시스템 구축
+
+- [AWS RDS 모니터링 구축 시, AWS CloudWatch 대신 Percona rds_exporter를 선택한 이유](project/2-7/rds_monitoring.md)
+- [AWS RDS 모니터링 시스템 구축 과정에서 문제점과 해결방법](project/2-7/rds_monitoring_troubleshooting.md)
+
+### 2-8. 이미지 리사이징 처리 서버 구축
+
+- [이미지 처리 서버 구축시, Thumbor를 택한 이유](project/2-8/why_thumbor.md)
+
+### 2-9. 송아리당뇨 API Server 마이그레이션
+
+- [모놀리식 아키텍처 구조의 프로젝트를 마이크로서비스로 전환한 이유](project/2-9/why_msa.md)
 - [대용량 데이터(약 60만 건) 조회 성능을 개선한 방법은 무엇인가요?](cs/database/db_60_perform.md)
 
 <br/>

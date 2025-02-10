@@ -66,3 +66,7 @@
 
 - **REST**: **HTTP 캐싱**을 활용할 수 있기 때문에, GET 요청에 대해 효과적으로 캐싱이 가능합니다.
 - **GraphQL**: 캐싱이 상대적으로 **어려움**. 특히 쿼리가 동적으로 변할 수 있기 때문에, 세밀한 캐싱 전략이 필요합니다.
+
+<br/>
+
+- [관련 본인 게시글](https://velog.io/@dongvelop/Spring-Boot-GraphQL-%EC%86%8C%EA%B0%9C)
