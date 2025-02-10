@@ -1,6 +1,6 @@
 # technical-interview
 
-이직을 준비하며 오랜 시간 수집한 자료들입니다.
+이직을 준비하면서 필요한 내용들을 정리한 자료입니다.
 모두 행복하세요.
 
 ### 목차
@@ -25,9 +25,9 @@
 - [추상클래스와 인터페이스의 차이](cs/java/java_%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
 - [volatile 키워드는 무엇이고 언제 사용하나요?](cs/java/java_volatile.md)
 - [synchronized 와 ReentrantLock](cs/java/java_synchronized_ReentrantLock.md)
+- [ThreadLocal](cs/java/java_threadlocal.md)
 - [GC 별 특징 및 구조, 동작 과정](cs/java/java_gc.md)
 - [비동기 처리 및 스레드 관리](cs/java/java_async.md)
-- [ThreadLocal](cs/java/java_threadlocal)
 - [JDK 8과 JDK 17, JDK 21의 주요 차이](cs/java/java_8_17_21.md)
 - [**Virtual Threads**](cs/java/java_virtual_thread.md)
 - [**JVM 옵션에서 Xmx, Xms를 동일하게 설정하는 이유**](cs/java/java_jvm_xmx_xms.md)
@@ -262,6 +262,7 @@
 - 신입/경력 개발자의 온보딩 프로세스는 어떻게 진행되나요?
 - 입사를 하게 되면 담당하게 될 업무는 무엇인가요?
 - 개인의 성장과 역량 개발을 위한 피드백/평가 방식이 있나요?
+- 서비스에 대한 DAU/MAU 등의 사용 지표를 분석하고 있나요?
 
 ### 회사 및 비즈니스 관련
 
