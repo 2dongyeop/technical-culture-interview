@@ -1,32 +1,16 @@
 # technical-interview
 
-기술 및 인성/컬쳐핏 면접 준비 자료
+이직을 준비하며 오랜 시간 수집한 자료들입니다.
+모두 행복하세요.
 
 ### 목차
 
-#### [기술 면접](#기술-면접)
-
-1. [CS](#1-cs)
-    - [1-1. Java](#1-1-java)
-    - [1-2. Spring](#1-2-spring)
-    - [1-3. JPA](#1-3-jpa)
-    - [1-4. Database](#1-4-database)
-    - [1-5. Network](#1-5-network)
-    - [1-6. 인프라/운영/안정성](#1-6-인프라운영안정성)
-
-2. [프로젝트 경험](#2-프로젝트-경험)
-
-    - [2-1. 공통](#2-1-공통)
-    - [2-2. 문자 전송 클라이언트 변경](#2-2-문자-전송-클라이언트-변경)
-    - [2-3. 송아리에어 서브사용자 모니터링 기능 개발](#2-3-송아리에어-서브사용자-모니터링-기능-개발)
-    - [2-4. 서비스 복구 및 백업 프로세스 설립](#2-4-서비스-복구-및-백업-프로세스-설립)
-    - [2-5. 사내 온프레미스 서버 이관](#2-5-사내-온프레미스-서버-이관)
-    - [2-6. 송아리 프리미엄정기 구독 서비스 개발](#2-6-송아리-프리미엄정기-구독-서비스-개발)
-    - [2-7. AWS RDS 모니터링 시스템 구축](#2-7-aws-rds-모니터링-시스템-구축)
-    - [2-8. 이미지 리사이징 처리 서버 구축](#2-8-이미지-리사이징-처리-서버-구축)
-    - [2-9. 송아리당뇨 API Server 마이그레이션](#2-9-송아리당뇨-api-server-마이그레이션)
-
-#### [인성 면접](#인성-면접)
+1. [기술면접 : CS 지식부터 개인 프로젝트 기반 기술 면접까지](#기술-면접)
+2. [인성/컬쳐핏 면접 : 메타인지부터 조직문화 적합성까지](#인성-및-컬쳐핏-면접)
+3. [기타](#기타)
+    - [이력서 작성 시 참고하면 좋을 자료들](#이력서-작성-시-참고하면-좋을-자료들)
+    - [CS 지식 정리 시 참고하면 좋을 자료들](#cs-지식-정리-시-참고하면-좋을-자료들)
+    - [이직 준비시 멘탈 관리](#이직-준비시-멘탈-관리)
 
 <br/>
 
@@ -63,7 +47,7 @@
 - [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
 - [Spring Cloud Config Server의 장단점](cs/spring/spring_cloud_config.md)
 - [Circuit Breaker 패턴이 필요한 이유 & Spring Cloud Resilience4j 주요 기능](cs/spring/spring_circuit_breaker.md)
-- [Spring Cloud MSA 관련 모든것](https://github.com/2dongyeop/spring-cloud-msa)
+- [**Spring Cloud MSA 관련 모든것**](https://github.com/2dongyeop/spring-cloud-msa)
 
 ### 1-3. JPA
 
@@ -107,9 +91,7 @@
 ## 2. 프로젝트 경험
 
 > ### 안내
-> 개인 프로젝트 경험 관련
->
-내용은 [첨부한 이력서]((resource/%E1%84%89%E1%85%A5%E1%84%87%E1%85%A5_%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8C%E1%85%A1_%E1%84%8B%E1%85%B5%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%A7%E1%86%B8_%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%89%E1%85%A5.pdf))
+> 개인 프로젝트 경험 관련 내용은 [첨부한 이력서](resource/%E1%84%89%E1%85%A5%E1%84%87%E1%85%A5_%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8C%E1%85%A1_%E1%84%8B%E1%85%B5%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%A7%E1%86%B8_%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%89%E1%85%A5.pdf)
 > 를 기반으로 키워드를 추출하여 작성했습니다. 개인 경험이다보니 겹치는 내용이 없을 지도 모릅니다.
 >
 > 어느 문제를 어떻게 접근했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
@@ -124,16 +106,16 @@
 ### 2-1. 공통
 
 - [신기능 개발 시에 개발 프로세스와 각 단계별 역할을 설명해주세요.](project/common/develop_process.md)
+- [**Retry 정책을 설계할 때 고려사항**](cs/spring/spring_retry.md)
+- [테스트 코드 작성 원칙 및 전략이 있는지?](project/common/test_code.md)
 - [여러 부하 테스트 툴(nGrinder, JMeter, k6, Locust) 중에서 nGrinder를 선택한 이유](project/common/load_test.md)
 - [여러 APM 툴(Pinpoint, Datadog, Jaeger, New Relic, Zipkin) 중 Pinpoint을 선택한 이유](project/common/apm.md)
-- [테스트 코드 작성 원칙 및 전략이 있는지?](project/common/test_code.md)
-- [**Retry 정책을 설계할 때 고려사항**](cs/spring/spring_retry.md)
 
 ### 2-2. 문자 전송 클라이언트 변경
 
 - [DB Agent 방식 vs API 방식 비교](project/2-2/db_agent_api.md)
 - [여러 문자 전송 플랫폼 중, NCP를 선택한 이유](project/2-2/ncp.md)
-- [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는?](project/2-2/reactive_feign.md)
+- [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는? 그리고 Reactive Feign의 단점.](project/2-2/reactive_feign.md)
 - [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
 
 ### 2-3. 송아리에어 서브사용자 모니터링 기능 개발
@@ -174,8 +156,127 @@
 - [모놀리식 아키텍처 구조의 프로젝트를 마이크로서비스로 전환한 이유](project/2-9/why_msa.md)
 - [대용량 데이터(약 60만 건) 조회 성능을 개선한 방법은 무엇인가요?](cs/database/db_60_perform.md)
 
+### 2-10. 평가 역량별 예상 질문 구분 예시
+
+- 위에서 나온 키워드 질문들을 **평가 역량별**로 그룹핑한 예시입니다.
+
+<details>
+<summary><strong>의사결정 과정</strong></summary>
+
+- API 서버를 모놀리식에서 MSA로 전환할 때, 공통 라이브러리를 만들기로 결정한 이유와 과정은?
+- JDK 21, Spring Boot 3.4, Spring Cloud 2024.0으로 마이그레이션을 준비하면서 가장 중요하게 고려한 요소는?
+- APM 도구를 비교/분석할 때 최종적으로 선택한 기준과 그 과정에서 팀과 어떻게 합의했는가?
+- EC2의 Launch Template 업데이트를 자동화할 때, 어떤 전략을 선택했으며 그 선택이 가져온 장점과 단점은?
+- Google Play 및 Apple App Store의 구독 결제 상태를 통합 정의할 때, 기존 방식과의 차별점 및 최종 모델을 선택한 기준은?
+
+</details>
+
+<details>
+<summary><strong>문제 해결 능력(겪은 어려움과 해결 방법)</strong></summary>
+
+- Pinpoint APM을 JDK 8 → JDK 17 환경으로 업그레이드할 때 가장 큰 기술적 문제는 무엇이었고, 이를 어떻게 해결했는가?
+- Prometheus 기반 모니터링을 설정할 때 예상치 못한 장애나 데이터 수집 문제를 경험한 적이 있는가? 어떻게 해결했는가?
+- Spring Boot 기반 GraphQL을 도입할 때 발생했던 주요 문제는 무엇이었고, 이를 어떻게 극복했는가?
+- 대규모 성능 테스트를 진행할 때 JMeter, Gatling, k6, Locust 중 특정 도구를 선택해야 했을 때 어떤 문제가 있었고, 어떻게 해결했는가?
+- AWS RDS(MySQL 8.0) 모니터링을 rds_exporter로 구축할 때 성능 최적화와 관련된 어려움이 있었나? 어떻게 해결했는가?
+
+</details>
+
+<details>
+<summary><strong>협업 경험</strong></summary>
+
+- 모놀리식 API 서버를 MSA로 전환하면서 프론트엔드, 데이터 엔지니어 팀과의 협업은 어떻게 진행했는가?
+- APM 시스템(Pinpoint) 도입 후, 개발팀/운영팀과 데이터를 공유하거나 활용할 때 어떤 협업이 필요했으며, 어떻게 조율했는가?
+- 구독 결제 시스템 개발 시, Google/Apple 정책 변경과 관련하여 비즈니스 팀과 협업한 경험이 있는가? 어떻게 소통했는가?
+- 대규모 성능 테스트를 진행할 때 다른 개발자나 QA 팀과 어떻게 협업하여 효율성을 높였는가?
+- 내부 기술 발표를 15회 진행하면서, 발표 주제 선정과 피드백 반영 과정에서 팀원들과 어떻게 협력했는가?
+
+</details>
+
+
 <br/>
 
-## 인성 면접
+# 인성 및 컬쳐핏 면접
 
-업로드 예정
+> 답변 팁
+>
+> - 구체적인 경험을 포함하면 설득력이 높아집니다.
+> - **STAR 기법**(상황, 과제, 행동, 결과)을 활용하면 논리적인 답변 구성이 가능합니다.
+
+면접을 보러 가는 회사 혹은 팀에서 운영하는 서비스에 대해서 알아가는 것도 중요합니다. 관심도가 영향을 미칠 수 있다고 생각해요.
+
+### 지원 동기
+
+- 짧은 자기소개
+- 지원 동기
+- 저희 회사에 대해 알고 계신 것이 있으실까요? (자사 서비스 이용)
+- 현재 회사(혹은 이전 직장)를 떠나려는 이유는 무엇인가요?
+- 우리 회사에서 어떤 기여를 할 수 있을 것 같나요?
+
+### 메타인지
+
+- 성격이 외향적인지 내향적인지?
+- 주변 사람들은 나를 어떤 사람으로 생각하는지?
+- 본인의 강점과 약점은 무엇이라고 생각하나요?
+- 본인이 주도적으로 진행한 프로젝트가 있다면 소개해주세요.
+- 예상보다 성과가 좋지 않았던 경험이 있다면? 어떻게 대처했나요?
+- 가장 최근에 배운 새로운 기술이나 개념은 무엇인가요?
+- 자신이 성장했다고 느낀 순간은 언제인가요?
+
+### 조직 문화 적합성
+
+- 이상적으로 생각하는 조직/개발 문화
+- 조직 문화에 적응하는 나만의 방법이 있는지
+- 팀 내에서 커뮤니케이션할 때 가장 중요하게 생각하는 것은?
+- 코드 리뷰나 피드백을 받을 때, 또는 줄 때 중요하게 여기는 점은?
+- 같이 일하고 싶은 동료 유형과 같이 일하기 싫은 동료 유형
+- 협업 중 의견 충돌이 발생했을 때 어떻게 해결하는 편인가요?
+- 개발자로서 성장하기 위해 동료에게 기대하는 것이 있나요?
+
+### 삶의 태도 및 가치관
+
+- 장기적인 목표나 커리어 플랜이 있다면?
+- 스트레스 해소 방법(취미, 주말)
+- 삶에서 가장 중요하게 생각하는 가치
+- 개발자로서 지속적으로 성장하기 위해 어떤 노력을 하고 있나요?
+
+<br/>
+
+# 기타
+
+### 이력서 작성 시 참고하면 좋을 자료들
+
+커피챗을 통해 작성한 이력서를 피드백 받아보세요. 쑥스러워도 반드시 필요한 과정입니다. 본인의 이력서에 자신없다면, 면접관에게도 동일하다고 생각해요.
+
+- [진태양님](https://resume.dataportal.kr/)
+- [요우님](https://resume.yowu.dev/)
+- [Wonny | 데이터로 일하는 개발자 (Public)](https://www.notion.so/Wonny-Public-c2f8051bfb574f349406a30d2bc71a45?pvs=21)
+- [이동욱님](https://jojoldu.github.io/)
+- [아웃사이더님](https://blog.outsider.ne.kr/1234)
+
+### 이직 준비시 멘탈 관리
+
+- [바다쓰기님](https://xrabcde.github.io/moving-retrospection/)
+- [최홍희님](https://vvshinevv.tistory.com/108)
+- [카펀님](https://katfun.tistory.com/220)
+- [이호승님](https://github.com/leehosung/awesome-devteam)
+
+### CS 지식 정리 시 참고하면 좋을 자료들
+
+- [정신차려 이 각박한 세상속에서](https://www.notion.so/f8114c9e2c774eccaca509f9618b7115?pvs=21)
+- [NKLCWDT/CS](https://github.com/NKLCWDT/cs)
+- [규글님](https://github.com/gyoogle/tech-interview-for-developer)
+- [한재엽님](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+- [WeareSoft/tech-interview](https://github.com/WeareSoft/tech-interview)
+- [cheese10yun님 TIL](https://github.com/cheese10yun/TIL)
+- [남준이형 TIL](https://github.com/namjunemy/TIL)
+- [2dongyeop님 TIL](https://github.com/2dongyeop/TIL)
+- [VSfe님](https://github.com/VSFe/Tech-Interview?tab=readme-ov-file)
+- [backtony/SW-Maestro-gjgs의 Tech 문서](https://github.com/backtony/SW-Maestro-gjgs/blob/master/TECH.md#-%EC%99%9C-%EC%9D%B4-%EA%B8%B0%EC%88%A0%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%96%88%EB%8A%94%EA%B0%80-)
+- [신입 백엔드 면접 질문 Ver. 2.0.7](https://velog.io/@yukina1418/%EC%B5%9C%EA%B7%BC-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%8B%A4%EB%8B%88%EB%A9%B4%EC%84%9C-%EB%B0%9B%EC%95%98%EB%8D%98-%EC%A7%88%EB%AC%B8%EB%93%A4)
+
+### 진짜 기타
+
+- [이직, 퇴사 체크리스트](https://velog.io/@hyperperi/%EC%9D%B4%EC%A7%81%ED%87%B4%EC%82%AC-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8)
+
+
