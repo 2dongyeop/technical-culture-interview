@@ -1,5 +1,7 @@
 ## 분산락(Distributed Lock) 개념 및 적용 방법
 
+[참고하면 좋을 자료 (DB, Redis Lock)](https://github.com/2dongyeop/concurrency-solution)
+
 > **분산락이란?**
 >
 
