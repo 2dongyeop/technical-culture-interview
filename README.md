@@ -67,8 +67,8 @@
 - [**인덱스가 있음에도 성능이 더 느린 경우가 있다. 이에 대해 설명해보시오.**](cs/database/db_index_invalid.md)
 - [DB 인덱스가 어떤 자료구조로 이루어져 있어서, 성능을 향상시키나요?](cs/database/db_index_data_structure.md)
 - [MySQL InnoDB의 기본 격리 수준이 어떻게 될까요?](cs/database/db_default_isolation_level.md)
-- [MySQL MVCC 방식에 대해 설명해주세요.](cs/database/db_mysql_mvcc.md)
-- [MySQL Gap Lock](cs/database/db_mysql_gaplock.md)
+- [Dirty Read, Non-Repeatable Read, Phantom Read, Gap Lock](cs/database/db_mysql_gaplock.md)
+- [**MySQL MVCC 방식과 Undo Log에 대해 설명해주세요.**](cs/database/db_mysql_mvcc.md)
 - [비관적 락과 낙관적 락에 대해 설명해주세요.](cs/database/db_lock.md)
 
 ### 1-5. Network
