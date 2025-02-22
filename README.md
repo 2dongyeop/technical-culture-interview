@@ -1,6 +1,6 @@
 # technical-interview
 
-이직을 준비하면서 필요한 내용들을 정리한 자료입니다.
+이직을 준비하면서 정리했던 내용들과 실제 면접 질문 일부를 담았습니다.
 모두 행복하세요.
 
 ### 목차
@@ -25,6 +25,7 @@
 - [추상클래스와 인터페이스의 차이](cs/java/java_%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
 - [volatile 키워드는 무엇이고 언제 사용하나요?](cs/java/java_volatile.md)
 - [synchronized 와 ReentrantLock](cs/java/java_synchronized_ReentrantLock.md)
+    - Synchronized는 어떤 내부 원리로 락을 동작시키는지 설명해주세요..
 - [ThreadLocal](cs/java/java_threadlocal.md)
 - [GC 별 특징 및 구조, 동작 과정](cs/java/java_gc.md)
 - [비동기 처리 및 스레드 관리](cs/java/java_async.md)
@@ -40,6 +41,8 @@
 - [의존성 주입 방식 비교](cs/spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
 - [Spring DI, IoC, AOP](cs/spring/spring_di_ioc_aop.md)
 - [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
+    - 컴포지트 패턴을 알고 계신가요?
+    - 사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
 - [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
 - [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
@@ -56,6 +59,7 @@
 - [Transaction이란 무엇인가? @Transaction 애너테이션의 주요 옵션에 대해 설명](cs/spring/spring_transaction.md)
 - [영속성 컨텍스트란 무엇인가?](cs/spring/spring_context.md)
 - [N+1 문제와 해결책](cs/spring/spring_jpa_n1.md)
+    - 패치조인과 조인의 차이점을 알고 계신가요?
 - [JPA OSIV(Open Session In View) 설정](cs/spring/spring_jpa_osiv.md)
 
 ### 1-4. Database
@@ -98,7 +102,8 @@
 
 > ### 안내
 > 개인 프로젝트 경험 관련
-> 내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
+>
+내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
 > 를 기반으로 키워드를 추출하여 작성했습니다. 개인 경험이다보니 겹치는 내용이 없을 지도 모릅니다.
 >
 > 어느 문제를 어떻게 접근했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
@@ -117,6 +122,7 @@
 - [테스트 코드 작성 원칙 및 전략이 있는지?](project/common/test_code.md)
 - [여러 부하 테스트 툴(nGrinder, JMeter, k6, Locust) 중에서 nGrinder를 선택한 이유](project/common/load_test.md)
 - [여러 APM 툴(Pinpoint, Datadog, Jaeger, New Relic, Zipkin) 중 Pinpoint을 선택한 이유](project/common/apm.md)
+- 컴파일러를 모르는 사람이라고 가정하고, 저에게 JIT 컴파일러에 대해 설명해주세요. (상세 레벨 조절에 따른 성능 향상 이유)
 
 ### 2-2. 문자 전송 클라이언트 변경
 
@@ -124,11 +130,13 @@
 - [여러 문자 전송 플랫폼 중, NCP를 선택한 이유](project/2-2/ncp.md)
 - [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는? 그리고 Reactive Feign의 단점.](project/2-2/reactive_feign.md)
 - [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
+- `@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.
 
 ### 2-3. 송아리에어 서브사용자 모니터링 기능 개발
 
 - [SSE, WebSocket, MQTT의 동작 방식을 설명해주세요.](project/2-3/sse_websocket_mqtt.md)
 - [실시간 알림임에도 REST 방식을 선택한 이유는 무엇인가요?](project/2-3/realtime_rest.md)
+- JPA OSIV 옵션을 비활성화하지 않은 이유를 설명해주세요.
 
 ### 2-4. 서비스 복구 및 백업 프로세스 설립
 
@@ -153,15 +161,22 @@
 
 - [AWS RDS 모니터링 구축 시, AWS CloudWatch 대신 Percona rds_exporter를 선택한 이유](project/2-7/rds_monitoring.md)
 - [AWS RDS 모니터링 시스템 구축 과정에서 문제점과 해결방법](project/2-7/rds_monitoring_troubleshooting.md)
+- 모니터링할 때 관리 대상으로 여겨지는 주요 지표와 그 이유에 대해 설명해주세요.
 
 ### 2-8. 이미지 리사이징 처리 서버 구축
 
 - [이미지 처리 서버 구축시, Thumbor를 택한 이유](project/2-8/why_thumbor.md)
+- 리사이징이 일어나는 전체적인 동작 프로세스를 설명해주세요.
+- AWS CloudFront나 S3 Presigned URL을 사용하지 않은 이유가 있나요?
 
 ### 2-9. 송아리당뇨 API Server 마이그레이션
 
 - [모놀리식 아키텍처 구조의 프로젝트를 마이크로서비스로 전환한 이유](project/2-9/why_msa.md)
+- MSA로 전환하며 겪었던 어려움과 해결 방안에 대해 설명해주세요.
 - [대용량 데이터(약 60만 건) 조회 성능을 개선한 방법은 무엇인가요?](cs/database/db_60_perform.md)
+- API 서버들 간, 혹은 외부 API 통신이 작용하고 있을 때, 서킷 브레이커는 어떻게 설정되어 있나요?
+    - 만약, 서버가 스케일업 방식으로 이중화되어 있을 때, 외부 API에 문제가 생긴 상황에서 모든 서버들의 서킷브레이커 상태를 동기화하려면 어떻게 해야 할까요?
+- DB도 개별 DB로 분리를 하셨나요? 단일 DB와 개별 DB의 운영 방식에 대한 차이를 알고 계신가요?
 
 ### 2-10. 평가 역량별 예상 질문 구분 예시
 
@@ -216,7 +231,7 @@
 - 짧은 자기소개
 - 지원 동기
 - 저희 회사에 대해 알고 계신 것이 있으실까요? (자사 서비스 이용)
-- 현재 회사(혹은 이전 직장)를 떠나려는 이유는 무엇인가요?
+- 현재 회사(혹은 이전 직장)를 이직하려는 이유는 무엇인가요?
 - 우리 회사에서 어떤 기여를 할 수 있을 것 같나요?
 
 ### 메타인지
@@ -238,6 +253,12 @@
 - 같이 일하고 싶은 동료 유형과 같이 일하기 싫은 동료 유형
 - 협업 중 의견 충돌이 발생했을 때 어떻게 해결하는 편인가요?
 - 개발자로서 성장하기 위해 동료에게 기대하는 것이 있나요?
+- 어떤 종류의 동료를 원하시고, 스스로 어떤 동료가 되고 싶으신가요?
+- 팀원들에게 본인을 소개해달라고 하면, 어떤 동료라고 설명이 될 것 같으신가요?
+- 다른 사람을 설득할 때, 주로 사용하는 접근 방식이 어떻게 되시나요? (e.g. 경험 기반, 데이터 기반, ...)
+- 협업할 때 중요하게 생각하시는 것은 무엇인가요?
+- 조직에서는 리더형이신가요? 아니면 팔로우형이신가요?
+- Top-down 형식으로 일이 진행된 것 같은데, Bottom-up 형식으로 일하신 경험이 있으실까요? 혹은 Top-down 형식으로 일하면서 마주한 불편함이 있으실까요?
 
 ### 삶의 태도 및 가치관
 
@@ -245,6 +266,11 @@
 - 스트레스 해소 방법(취미, 주말)
 - 삶에서 가장 중요하게 생각하는 가치
 - 개발자로서 지속적으로 성장하기 위해 어떤 노력을 하고 있나요?
+- 최근 가장 관심있게 접한 기술은 무엇인가요?
+- 코드를 작성할 때, 어떤 부분을 가장 중요시 여기시나요? (e.g. 가독성, 성능 ..) 그리고 그 이유는 무엇인가요?
+- 어떤 개발자가 되고 싶으신가요?
+- 회사생활에서 ‘동료와의 화합, 나의 성장, 회사의 성장’ 중 어느 것이 가장 먼저인가요?
+- 회사에서 받았던 피드백은 어떤게 기억에 남나요? 그리고 개선하셨나요?
 
 <br/>
 
@@ -253,20 +279,25 @@
 ### 업무 및 개발 프로세스 관련
 
 - 신규 기능 개발 시, 업무프로세스가 어떻게 되나요?
+    - e.g.) Top-down / Bottom-up 인지, 일정 산출은 어떻게 진행되는지
 - 배포 및 운영 프로세스는 어떻게 진행되나요?
-- 장애 대응 및 온콜(야간 대응) 체계는 어떻게 되어 있나요?
+    - CI/CD 및 배포 환경, 인프라 환경 유무 등
+- 장애 대응(백업 및 복구) 체계는 어떻게 되어 있나요?
 
 ### 팀 및 조직 문화 관련
 
 - 팀 구성이 어떻게 되어 있나요?
 - 팀에서 사용하는 기술 스택이 어떻게 되나요?
+- 팀원들(특히 서버측)의 평균 연차 및 근속 연수가 어떻게 되나요?
 - 회사/팀 내 어떤 개발문화가 존재하나요?
+- 평소 팀 분위기는 어떤가요? (잡담.. 회식.. 등등 유무)
+- 문서화는 어떻게 이루어지고 있나요? (툴 & 문서화 대상)
 
 ### 커리어 성장 및 평가 관련
 
-- 개발자의 성장을 위해 회사에서 제공하는 지원(스터디, 세미나, 컨퍼런스 참가 등)이 있나요?
 - 신입/경력 개발자의 온보딩 프로세스는 어떻게 진행되나요?
 - 입사를 하게 되면 담당하게 될 업무는 무엇인가요?
+- 개발자의 성장을 위해 회사에서 제공하는 지원(스터디, 세미나, 컨퍼런스 참가 등)이 있나요?
 - 개인의 성장과 역량 개발을 위한 피드백/평가 방식이 있나요?
 - 서비스에 대한 DAU/MAU 등의 사용 지표를 분석하고 있나요?
 
@@ -297,6 +328,9 @@
 - [이호승님](https://github.com/leehosung/awesome-devteam)
 
 ### CS 지식 정리 시 참고하면 좋을 자료들
+
+> 위에서 작성된 CS 항목들은 필자에게 필요한 항목들을 수집한 것입니다.
+> 보시는 분들도 자신에게 필요한 항목들을 아래 링크들을 참고하여, 면접을 준비하시면 좋을 것 같습니다.
 
 - [정신차려 이 각박한 세상속에서](https://www.notion.so/f8114c9e2c774eccaca509f9618b7115?pvs=21)
 - [NKLCWDT/CS](https://github.com/NKLCWDT/cs)
