@@ -42,7 +42,7 @@
 - [Spring DI, IoC, AOP](cs/spring/spring_di_ioc_aop.md)
 - [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
     - 컴포지트 패턴을 알고 계신가요?
-    - 사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.
+    - [사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.](cs/spring/template_pattern.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
 - [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
 - [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
@@ -84,6 +84,8 @@
 - [CORS(Cross-Origin Resource Sharing)](cs/network/network_cors.md)
 - [**REST API vs gRPC**](cs/network/network_rest_grpc.md)
 - [**REST vs GraphQL**](cs/network/network_rest_graphql.md)
+    - [REST API와 비교해서 GraphQL의 장단점을 설명해주세요.](cs/network/network_rest-graphql2.md)
+    - [GraphQL을 도입하지 않았던 이유에 대해 설명해주세요.](cs/network/network_not_graphql.md)
 - [특정 요청의 응답 속도가 느려지는 원인은?](cs/network/network_slow_response.md)
 
 ### 1-6. 인프라/운영/안정성
@@ -130,7 +132,8 @@
 - [여러 문자 전송 플랫폼 중, NCP를 선택한 이유](project/2-2/ncp.md)
 - [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는? 그리고 Reactive Feign의 단점.](project/2-2/reactive_feign.md)
 - [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
-- `@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.
+    - [`@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.](project/2-2/why_async_not_full_async.md)
+    - [Netty의 이벤트 루프(Event Loop) 모델에 대해 설명해주세요.](project/2-2/netty_event_loop.md)
 
 ### 2-3. 송아리에어 서브사용자 모니터링 기능 개발
 
@@ -177,6 +180,7 @@
 - API 서버들 간, 혹은 외부 API 통신이 작용하고 있을 때, 서킷 브레이커는 어떻게 설정되어 있나요?
     - 만약, 서버가 스케일업 방식으로 이중화되어 있을 때, 외부 API에 문제가 생긴 상황에서 모든 서버들의 서킷브레이커 상태를 동기화하려면 어떻게 해야 할까요?
 - DB도 개별 DB로 분리를 하셨나요? 단일 DB와 개별 DB의 운영 방식에 대한 차이를 알고 계신가요?
+- 아키텍처는 어떤 것을 사용하고 계신가요? 비즈니스 로직은 (서비스, 도메인) 중 어디에 작성하고 계신가요? 해당 방법의 장단점과 연관지어 이유를 설명해주세요.
 
 ### 2-10. 평가 역량별 예상 질문 구분 예시
 
@@ -250,10 +254,17 @@
 - 조직 문화에 적응하는 나만의 방법이 있는지
 - 팀 내에서 커뮤니케이션할 때 가장 중요하게 생각하는 것은?
 - 코드 리뷰나 피드백을 받을 때, 또는 줄 때 중요하게 여기는 점은?
-- 같이 일하고 싶은 동료 유형과 같이 일하기 싫은 동료 유형
+- **같이 일하고 싶은 동료 유형과 같이 일하기 싫은 동료 유형**
+    - **원하는 동료 = "어떤 환경에서 잘 협업하는지"에 중점을 두기**
+    - e.g. "서로 피드백을 주고받으며 개선해 나가며 성장할 수 있는 동료들과 일하고 싶습니다."
 - 협업 중 의견 충돌이 발생했을 때 어떻게 해결하는 편인가요?
 - 개발자로서 성장하기 위해 동료에게 기대하는 것이 있나요?
-- 어떤 종류의 동료를 원하시고, 스스로 어떤 동료가 되고 싶으신가요?
+- **스스로 어떤 동료가 되고 싶으신가요?**
+    - **자신의 개발자로써의 성장 방향을 녹이기**
+    - e.g. 제가 가진 경험을 공유하고, 저도 동료들에게 배우면서 함께 성장할 수 있는 환경을 만드는 개발자.
+    - e.g. 단순히 주어진 개발만 하는 것이 아니라, 개발 과정에서 문제를 미리 발견하고, 해결 방안을 함께 고민하는 동료
+        - "이 API 호출이 많아질 경우 성능 이슈가 발생할 가능성은 없을까?"
+        - "이 데이터 구조가 향후 확장성을 고려했을 때 적절할까?"
 - 팀원들에게 본인을 소개해달라고 하면, 어떤 동료라고 설명이 될 것 같으신가요?
 - 다른 사람을 설득할 때, 주로 사용하는 접근 방식이 어떻게 되시나요? (e.g. 경험 기반, 데이터 기반, ...)
 - 협업할 때 중요하게 생각하시는 것은 무엇인가요?
@@ -262,6 +273,7 @@
 
 ### 삶의 태도 및 가치관
 
+- 주기적으로 회고를 진행하는지? 그렇다면 가장 기억에 남는 회고는?
 - 장기적인 목표나 커리어 플랜이 있다면?
 - 스트레스 해소 방법(취미, 주말)
 - 삶에서 가장 중요하게 생각하는 가치
@@ -278,26 +290,25 @@
 
 ### 업무 및 개발 프로세스 관련
 
-- 신규 기능 개발 시, 업무프로세스가 어떻게 되나요?
+- 신규 기능 개발 시, 업무 프로세스가 어떻게 되나요?
     - e.g.) Top-down / Bottom-up 인지, 일정 산출은 어떻게 진행되는지
 - 배포 및 운영 프로세스는 어떻게 진행되나요?
     - CI/CD 및 배포 환경, 인프라 환경 유무 등
-- 장애 대응(백업 및 복구) 체계는 어떻게 되어 있나요?
+- 장애 대응(백업 및 복구) 체계는 어떻게 구성되어 있나요?
 
 ### 팀 및 조직 문화 관련
 
 - 팀 구성이 어떻게 되어 있나요?
 - 팀에서 사용하는 기술 스택이 어떻게 되나요?
 - 팀원들(특히 서버측)의 평균 연차 및 근속 연수가 어떻게 되나요?
-- 회사/팀 내 어떤 개발문화가 존재하나요?
-- 평소 팀 분위기는 어떤가요? (잡담.. 회식.. 등등 유무)
+- 회사/팀 내 개발문화가 존재하나요? (코드리뷰, 1 on 1)
+- 평소 팀 분위기는 어떤가요? (잡담.. 회식.. 동아리.. 등등 유무)
 - 문서화는 어떻게 이루어지고 있나요? (툴 & 문서화 대상)
 
 ### 커리어 성장 및 평가 관련
 
 - 신입/경력 개발자의 온보딩 프로세스는 어떻게 진행되나요?
 - 입사를 하게 되면 담당하게 될 업무는 무엇인가요?
-- 개발자의 성장을 위해 회사에서 제공하는 지원(스터디, 세미나, 컨퍼런스 참가 등)이 있나요?
 - 개인의 성장과 역량 개발을 위한 피드백/평가 방식이 있나요?
 - 서비스에 대한 DAU/MAU 등의 사용 지표를 분석하고 있나요?
 
@@ -312,7 +323,7 @@
 
 ### 이력서 작성 시 참고하면 좋을 자료들
 
-커피챗을 통해 작성한 이력서를 피드백 받아보세요. 쑥스러워도 반드시 필요한 과정입니다. 본인의 이력서에 자신없다면, 면접관에게도 동일하게 보일 것이라고 생각해요.
+> 커피챗을 통해 작성한 이력서를 피드백 받아보세요. 쑥스러워도 반드시 필요한 과정입니다. 본인의 이력서에 자신없다면, 면접관에게도 동일하게 보일 것이라고 생각해요.
 
 - [진태양님](https://resume.dataportal.kr/)
 - [요우님](https://resume.yowu.dev/)
@@ -339,7 +350,7 @@
 - [WeareSoft/tech-interview](https://github.com/WeareSoft/tech-interview)
 - [cheese10yun님 TIL](https://github.com/cheese10yun/TIL)
 - [남준이형 TIL](https://github.com/namjunemy/TIL)
-- [2dongyeop님 TIL](https://github.com/2dongyeop/TIL)
+- [본인 TIL](https://github.com/2dongyeop/TIL)
 - [VSfe님](https://github.com/VSFe/Tech-Interview?tab=readme-ov-file)
 - [backtony/SW-Maestro-gjgs의 Tech 문서](https://github.com/backtony/SW-Maestro-gjgs/blob/master/TECH.md#-%EC%99%9C-%EC%9D%B4-%EA%B8%B0%EC%88%A0%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%96%88%EB%8A%94%EA%B0%80-)
 - [신입 백엔드 면접 질문 Ver. 2.0.7](https://velog.io/@yukina1418/%EC%B5%9C%EA%B7%BC-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%8B%A4%EB%8B%88%EB%A9%B4%EC%84%9C-%EB%B0%9B%EC%95%98%EB%8D%98-%EC%A7%88%EB%AC%B8%EB%93%A4)
