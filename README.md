@@ -125,6 +125,7 @@
 - [여러 부하 테스트 툴(nGrinder, JMeter, k6, Locust) 중에서 nGrinder를 선택한 이유](project/common/load_test.md)
 - [여러 APM 툴(Pinpoint, Datadog, Jaeger, New Relic, Zipkin) 중 Pinpoint을 선택한 이유](project/common/apm.md)
 - 컴파일러를 모르는 사람이라고 가정하고, 저에게 JIT 컴파일러에 대해 설명해주세요. (상세 레벨 조절에 따른 성능 향상 이유)
+- 프로젝트 경험 중, 가장 해결하기 어려웠거나 실패한 경험을 말해주세요. 그리고 어떻게 해결했으며, 해결하지 못했다면 어떤 대처를 해야할 지 말해주세요.
 
 ### 2-2. 문자 전송 클라이언트 변경
 
@@ -134,6 +135,9 @@
 - [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
     - [`@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.](project/2-2/why_async_not_full_async.md)
     - [Netty의 이벤트 루프(Event Loop) 모델에 대해 설명해주세요.](project/2-2/netty_event_loop.md)
+    - [논블로킹 형태의 클라이언트를 사용해서 성능을 개선하신 것 같은데.. 그럼 만약에 스레드풀을 충분히 많은 양으로 설정해놓았다면, 지금 개선하신 방식과 어떤 차이가 있을까요? 스레드풀의 크기가 클 경우에 발생하는 문제점은 무엇일까요?](project/2-2/non-blocking_threadpool.md)
+- [동기랑 비동기. 그리고 블로킹이랑 논블로킹에 대해 설명해주세요.](project/2-2/sync_async_block_nonblock.md)
+    - [블로킹 함수를 사용하면서, 비동기로 개발할 수 있나요? 가능하다면, 예시를 들어 설명해주세요.](project/2-2/blocking_async_combination.md)
 
 ### 2-3. 송아리에어 서브사용자 모니터링 기능 개발
 
@@ -234,6 +238,7 @@
 
 - 짧은 자기소개
 - 지원 동기
+    - [진태양님 블로그 - 모든 회사에 어필 할 수 있는 지원 동기와 목표설정 방법](https://dataportal.kr/%EB%AA%A8%EB%93%A0-%ED%9A%8C%EC%82%AC%EC%97%90-%EC%96%B4%ED%95%84-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%A7%80%EC%9B%90-%EB%8F%99%EA%B8%B0%EC%99%80-%EB%AA%A9%ED%91%9C%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/)
 - 저희 회사에 대해 알고 계신 것이 있으실까요? (자사 서비스 이용)
 - 현재 회사(혹은 이전 직장)를 이직하려는 이유는 무엇인가요?
 - 우리 회사에서 어떤 기여를 할 수 있을 것 같나요?
