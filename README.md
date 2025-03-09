@@ -21,13 +21,14 @@
 
 ### 1-1. Java
 
+- [Java의 Object 클래스의 Equals() 메서드와 HashCode() 메서드가 무슨 목적인지 설명해주세요.](cs/java/java_equals_hascode.md)
 - [자료구조 및 Java 컬렉션. with 동적 크기 조정](cs/java/java_%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%BB%AC%EB%A0%89%EC%85%98.md)
 - [추상클래스와 인터페이스의 차이](cs/java/java_%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
 - [volatile 키워드는 무엇이고 언제 사용하나요?](cs/java/java_volatile.md)
 - [synchronized 와 ReentrantLock](cs/java/java_synchronized_ReentrantLock.md)
-- [Synchronized는 어떤 내부 원리로 락을 동작시키는지 설명해주세요.(뮤텍스락)](cs/java/how_synchronized.md)
+- [**Synchronized는 어떤 내부 원리로 락을 동작시키는지 설명해주세요.**(뮤텍스락)](cs/java/how_synchronized.md)
     - [뮤텍스와 세마포어](cs/java/mutex_semaphore.md)
-- [ConcurrentHashMap은 내부적으로 어떻게 동시성 이슈를 해결했는지 아시나요?(CAS)](cs/java/how_concurrenthashmap.md)
+- [**ConcurrentHashMap은 내부적으로 어떻게 동시성 이슈를 해결했는지 아시나요?**(CAS)](cs/java/how_concurrenthashmap.md)
 - [Atomic은 Thread-Safe한 클래스인지? 그리고 내부적으로 어떻게 구현되어 있는지 아시나요?(CAS)](cs/java/how_atomic.md)
 - [ThreadLocal](cs/java/java_threadlocal.md)
 - [GC 별 특징 및 구조, 동작 과정](cs/java/java_gc.md)
@@ -40,11 +41,16 @@
 
 ### 1-2. Spring
 
+- [Spring MVC란?](cs/spring/spring_mvc.md)
+- [디스패처 서블릿에 대해 설명해주세요.](cs/spring/spring_dispatcherservlet.md)
 - [Spring Bean과 생명주기](cs/spring/spring_bean_%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
 - [의존성 주입 방식 비교](cs/spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
 - [Spring DI, IoC, AOP](cs/spring/spring_di_ioc_aop.md)
+    - [AOP에 대해 설명해주세요. 그리고 내부 구현에 대해 설명해주세요.](cs/spring/spring_aop.md)
 - [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
     - 컴포지트 패턴을 알고 계신가요?
+    - 전략 패턴에 대해 알고 계신가요?
+    - 프록시 패턴에 대해 알고 계신가요?
     - [사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.](cs/spring/template_pattern.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
 - [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
@@ -72,6 +78,8 @@
 - [인덱스란?](cs/database/db_index.md)
 - [인메모리 DB가 더 빠른 이유](cs/database/db_inmemory.md)
 - [**인덱스가 있음에도 성능이 더 느린 경우가 있다. 이에 대해 설명해보시오.**](cs/database/db_index_invalid.md)
+- [**LIKE 연산자가 인덱스를 사용하지 않는 이유**](cs/database/like_not_using_index.md)
+- [B+Tree가 검색에 효과적인 이유를 아시나요?](cs/database/b_tree.md)
 - [DB 인덱스가 어떤 자료구조로 이루어져 있어서, 성능을 향상시키나요?](cs/database/db_index_data_structure.md)
 - [MySQL InnoDB의 기본 격리 수준이 어떻게 될까요?](cs/database/db_default_isolation_level.md)
 - [Dirty Read, Non-Repeatable Read, Phantom Read, Gap Lock](cs/database/db_mysql_gaplock.md)
@@ -136,11 +144,12 @@
 - [여러 문자 전송 플랫폼 중, NCP를 선택한 이유](project/2-2/ncp.md)
 - [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는? 그리고 Reactive Feign의 단점.](project/2-2/reactive_feign.md)
 - [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
-    - [`@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.](project/2-2/why_async_not_full_async.md)
+    - [**`@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.**](project/2-2/why_async_not_full_async.md)
     - [Netty의 이벤트 루프(Event Loop) 모델에 대해 설명해주세요.](project/2-2/netty_event_loop.md)
-    - [논블로킹 형태의 클라이언트를 사용해서 성능을 개선하신 것 같은데.. 그럼 만약에 스레드풀을 충분히 많은 양으로 설정해놓았다면, 지금 개선하신 방식과 어떤 차이가 있을까요? 스레드풀의 크기가 클 경우에 발생하는 문제점은 무엇일까요?](project/2-2/non-blocking_threadpool.md)
-- [동기랑 비동기. 그리고 블로킹이랑 논블로킹에 대해 설명해주세요.](project/2-2/sync_async_block_nonblock.md)
-    - [블로킹 함수를 사용하면서, 비동기로 개발할 수 있나요? 가능하다면, 예시를 들어 설명해주세요.](project/2-2/blocking_async_combination.md)
+    - [**논블로킹 형태의 클라이언트를 사용해서 성능을 개선하신 것 같은데.. 그럼 만약에 스레드풀을 충분히 많은 양으로 설정해놓았다면, 지금 개선하신 방식과 어떤 차이가 있을까요? 스레드풀의 크기가 클 경우에
+      발생하는 문제점은 무엇일까요?**](project/2-2/non-blocking_threadpool.md)
+- [**동기랑 비동기. 그리고 블로킹이랑 논블로킹에 대해 설명해주세요.**](project/2-2/sync_async_block_nonblock.md)
+    - [**블로킹 함수를 사용하면서, 비동기로 개발할 수 있나요? 가능하다면, 예시를 들어 설명해주세요.**](project/2-2/blocking_async_combination.md)
 
 ### 2-3. 송아리에어 서브사용자 모니터링 기능 개발
 
