@@ -101,9 +101,9 @@
 
 - [모든 개발자가 알아야 할 SOLID 원칙](https://tech.kakaobank.com/posts/2411-solid-truth-or-myths-for-developers/)
 - [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
-    - 컴포지트 패턴을 알고 계신가요?
-    - 전략 패턴에 대해 알고 계신가요?
-    - 프록시 패턴에 대해 알고 계신가요?
+    - [컴포지트 패턴을 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B3%B5%ED%95%A9%EC%B2%B4Composite-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0)
+    - [전략 패턴에 대해 알고 계신가요?](https://victorydntmd.tistory.com/292)
+    - [프록시 패턴에 대해 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%ED%94%84%EB%A1%9D%EC%8B%9CProxy-%ED%8C%A8%ED%84%B4-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
     - [사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.](cs/spring/template_pattern.md)
 - [**REST API vs gRPC**](cs/network/network_rest_grpc.md)
 - [**REST vs GraphQL**](cs/network/network_rest_graphql.md)
@@ -119,17 +119,16 @@
 
 > ### 안내
 > 개인 프로젝트 경험 관련
->
-내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
-> 를 기반으로 키워드를 추출하여 작성했습니다. 개인 경험이다보니 겹치는 내용이 없을 지도 모릅니다.
->
-> 어느 문제를 어떻게 접근했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
+> 내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
+> 를 기반으로 키워드를 추출하여 작성했습니다. 
+> 
+> 개인적인 경험이다보니 겹치는 내용은 없겠지만, 문제를 어떻게 파악하고 어떤 고민을 통해 어떻게 해결했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
 >
 >
 > ### 답변 팁
 > 1. 답변을 아래와 같은 순서로 진행하면 좋습니다. <br/>
      a. **진행 배경 → 기술 선택 및 이유 → 해결 방법 및 고민 내용 → 성과 혹은 아쉬운 점**
-> 2. **어떤 역량을 평가하는 질문인지를 구분**하여 역량별 답변을 준비하는 것도 좋은 방법입니다. <br/>
+> 2. **어떤 역량을 평가하는 질문인지를 구분**하여 역량별 답변을 준비하는 것도 좋은 방법이라고 생각합니다. <br/>
      a. 의사결정 과정 / 문제 해결 능력 / 협업 경험
 
 ### 2-1. 공통
