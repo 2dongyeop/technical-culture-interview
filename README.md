@@ -47,17 +47,9 @@
 - [의존성 주입 방식 비교](cs/spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
 - [Spring DI, IoC, AOP](cs/spring/spring_di_ioc_aop.md)
     - [AOP에 대해 설명해주세요. 그리고 내부 구현에 대해 설명해주세요.](cs/spring/spring_aop.md)
-- [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
-    - 컴포지트 패턴을 알고 계신가요?
-    - 전략 패턴에 대해 알고 계신가요?
-    - 프록시 패턴에 대해 알고 계신가요?
-    - [사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.](cs/spring/template_pattern.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
-- [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
-- [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
 - [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](cs/spring/spring_feign.md)
 - [분산락(Distributed Lock) 개념 및 적용 방법](cs/spring/spring_lock.md)
-- [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
 - [Spring Cloud Config Server의 장단점](cs/spring/spring_cloud_config.md)
 - [Circuit Breaker 패턴이 필요한 이유 & Spring Cloud Resilience4j 주요 기능](cs/spring/spring_circuit_breaker.md)
 - [**Spring Cloud MSA 관련 모든것**](https://github.com/2dongyeop/spring-cloud-msa)
@@ -93,10 +85,6 @@
 - [HTTP 1.1, HTTP/2, HTTP/3](cs/network/network_http_1_2_3.md)
 - [REST(Representational State Transfer)](cs/network/network_rest.md)
 - [CORS(Cross-Origin Resource Sharing)](cs/network/network_cors.md)
-- [**REST API vs gRPC**](cs/network/network_rest_grpc.md)
-- [**REST vs GraphQL**](cs/network/network_rest_graphql.md)
-    - [REST API와 비교해서 GraphQL의 장단점을 설명해주세요.](cs/network/network_rest-graphql2.md)
-    - [GraphQL을 도입하지 않았던 이유에 대해 설명해주세요.](cs/network/network_not_graphql.md)
 - [특정 요청의 응답 속도가 느려지는 원인은?](cs/network/network_slow_response.md)
 
 ### 1-6. 인프라/운영/안정성
@@ -108,6 +96,22 @@
 - [부하 테스트 및 TPS 분석 시 고려사항](cs/infra/infra_load_test_consider.md)
 - [APM 활용 방안](cs/infra/infra_apm.md)
 - [배포 전략: 카나리, 블루-그린, 롤링 배포 비교](cs/infra/infra_deploy.md)
+
+### 1-7. 공통
+
+- [모든 개발자가 알아야 할 SOLID 원칙](https://tech.kakaobank.com/posts/2411-solid-truth-or-myths-for-developers/)
+- [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
+    - 컴포지트 패턴을 알고 계신가요?
+    - 전략 패턴에 대해 알고 계신가요?
+    - 프록시 패턴에 대해 알고 계신가요?
+    - [사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.](cs/spring/template_pattern.md)
+- [**REST API vs gRPC**](cs/network/network_rest_grpc.md)
+- [**REST vs GraphQL**](cs/network/network_rest_graphql.md)
+    - [REST API와 비교해서 GraphQL의 장단점을 설명해주세요.](cs/network/network_rest-graphql2.md)
+    - [GraphQL을 도입하지 않았던 이유에 대해 설명해주세요.](cs/network/network_not_graphql.md)
+- [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
+- [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
+- [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
 
 <br/>
 
