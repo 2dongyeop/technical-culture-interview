@@ -354,6 +354,7 @@
 - [최홍희님](https://vvshinevv.tistory.com/108)
 - [카펀님](https://katfun.tistory.com/220)
 - [이호승님](https://github.com/leehosung/awesome-devteam)
+- [Greg Lee님](https://medium.com/@greg.shiny82/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-144a1fe28ca4)
 
 ### CS 지식 정리 시 참고하면 좋을 자료들
 
