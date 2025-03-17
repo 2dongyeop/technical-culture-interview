@@ -1,5 +1,5 @@
 ## Layered Architecture & Hexagonal Architecture
-
+![architecture.png](../../resource/architecture.png)
 1. **Layered Architecture (계층형 아키텍처)**
 
 **구조**

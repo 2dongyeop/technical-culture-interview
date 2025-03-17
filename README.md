@@ -21,6 +21,8 @@
 
 ### 1-1. Java
 
+- [알아두면 좋을 JVM Option](cs/java/jvm_options.md)
+- [**JVM 옵션에서 Xmx, Xms를 동일하게 설정하는 이유**](cs/java/java_jvm_xmx_xms.md)
 - [Java의 Object 클래스의 Equals() 메서드와 HashCode() 메서드가 무슨 목적인지 설명해주세요.](cs/java/java_equals_hascode.md)
 - [자료구조 및 Java 컬렉션. with 동적 크기 조정](cs/java/java_%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%BB%AC%EB%A0%89%EC%85%98.md)
 - [추상클래스와 인터페이스의 차이](cs/java/java_%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
@@ -35,7 +37,6 @@
 - [비동기 처리 및 스레드 관리](cs/java/java_async.md)
 - [JDK 8과 JDK 17, JDK 21의 주요 차이](cs/java/java_8_17_21.md)
 - [**Virtual Threads**](cs/java/java_virtual_thread.md)
-- [**JVM 옵션에서 Xmx, Xms를 동일하게 설정하는 이유**](cs/java/java_jvm_xmx_xms.md)
 - [**OutOfMemoryError의 원인을 분석할 수 있나요?**](cs/java/java_oom.md)
 - [JVM Cold Start 최적화를 위해 어떤 접근 방식을 사용했나요?](cs/java/java_cold_start.md)
 
@@ -120,8 +121,8 @@
 > ### 안내
 > 개인 프로젝트 경험 관련
 > 내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
-> 를 기반으로 키워드를 추출하여 작성했습니다. 
-> 
+> 를 기반으로 키워드를 추출하여 작성했습니다.
+>
 > 개인적인 경험이다보니 겹치는 내용은 없겠지만, 문제를 어떻게 파악하고 어떤 고민을 통해 어떻게 해결했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
 >
 >
@@ -376,6 +377,8 @@
 - [backtony/SW-Maestro-gjgs의 Tech 문서](https://github.com/backtony/SW-Maestro-gjgs/blob/master/TECH.md#-%EC%99%9C-%EC%9D%B4-%EA%B8%B0%EC%88%A0%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%96%88%EB%8A%94%EA%B0%80-)
 - [신입 백엔드 면접 질문 Ver. 2.0.7](https://velog.io/@yukina1418/%EC%B5%9C%EA%B7%BC-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%8B%A4%EB%8B%88%EB%A9%B4%EC%84%9C-%EB%B0%9B%EC%95%98%EB%8D%98-%EC%A7%88%EB%AC%B8%EB%93%A4)
 - [신입 개발자 기술면접 질문 모음](https://javanewbie.tistory.com/48)
+- [시스템 설계 면접 팁1](https://brunch.co.kr/@jihyun-um/43)
+- [시스템 설계 면접 팁2](https://deveric.tistory.com/105)
 
 ### 진짜 기타
 
