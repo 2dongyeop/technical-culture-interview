@@ -35,6 +35,7 @@
 - [ThreadLocal](cs/java/java_threadlocal.md)
 - [GC 별 특징 및 구조, 동작 과정](cs/java/java_gc.md)
 - [비동기 처리 및 스레드 관리](cs/java/java_async.md)
+- 스레드 상태에 대해 설명해주세요. 혹시 TIMED_WATING이랑 WAITING의 차이를 아시나요?
 - [JDK 8과 JDK 17, JDK 21의 주요 차이](cs/java/java_8_17_21.md)
 - [**Virtual Threads**](cs/java/java_virtual_thread.md)
 - [**OutOfMemoryError의 원인을 분석할 수 있나요?**](cs/java/java_oom.md)
@@ -49,6 +50,7 @@
 - [Spring DI, IoC, AOP](cs/spring/spring_di_ioc_aop.md)
     - [AOP에 대해 설명해주세요. 그리고 내부 구현에 대해 설명해주세요.](cs/spring/spring_aop.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
+- [OpenFeign 외에 다른 HTTP Client를 사용해보았는지? 다른 것들과 비교했을 때 불편한 점은?](https://velog.io/@dongvelop/Spring-Cloud-OpenFeign-%EB%A9%94%EB%89%B4%EC%96%BC-%EC%A0%95%EB%A6%AC-with-Spring-REST-Clients)
 - [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](cs/spring/spring_feign.md)
 - [분산락(Distributed Lock) 개념 및 적용 방법](cs/spring/spring_lock.md)
 - [Spring Cloud Config Server의 장단점](cs/spring/spring_cloud_config.md)
@@ -78,6 +80,9 @@
 - [Dirty Read, Non-Repeatable Read, Phantom Read, Gap Lock](cs/database/db_mysql_gaplock.md)
 - [**MySQL MVCC 방식과 Undo Log에 대해 설명해주세요.**](cs/database/db_mysql_mvcc.md)
 - [비관적 락과 낙관적 락에 대해 설명해주세요.](cs/database/db_lock.md)
+- RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요? RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?
+- Redis는 메모리가 가득 찼을 때 어떻게 동작하나요?
+- Redis를 스케일아웃 한다면 어떤 점들을 고려해야 하나요?
 
 ### 1-5. Network
 
