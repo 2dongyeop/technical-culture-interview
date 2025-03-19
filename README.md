@@ -35,7 +35,7 @@
 - [ThreadLocal](cs/java/java_threadlocal.md)
 - [GC 별 특징 및 구조, 동작 과정](cs/java/java_gc.md)
 - [비동기 처리 및 스레드 관리](cs/java/java_async.md)
-- 스레드 상태에 대해 설명해주세요. 혹시 TIMED_WATING이랑 WAITING의 차이를 아시나요?
+- [스레드 상태에 대해 설명해주세요. 혹시 TIMED_WATING이랑 WAITING의 차이를 아시나요?](cs/java/thread_status.md)
 - [JDK 8과 JDK 17, JDK 21의 주요 차이](cs/java/java_8_17_21.md)
 - [**Virtual Threads**](cs/java/java_virtual_thread.md)
 - [**OutOfMemoryError의 원인을 분석할 수 있나요?**](cs/java/java_oom.md)
@@ -80,7 +80,9 @@
 - [Dirty Read, Non-Repeatable Read, Phantom Read, Gap Lock](cs/database/db_mysql_gaplock.md)
 - [**MySQL MVCC 방식과 Undo Log에 대해 설명해주세요.**](cs/database/db_mysql_mvcc.md)
 - [비관적 락과 낙관적 락에 대해 설명해주세요.](cs/database/db_lock.md)
-- RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요? RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?
+- [RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
+- [RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?](cs/database/db_rdb_too_many_data.md)
+- [RDB에서는 쓰기 성능을 어느 정도 희생하면서라도 읽기 성능을 극대화하기 위해 어떤 일들을 할까요?](cs/database/db_rdbms_sacrifice.md)
 - Redis는 메모리가 가득 찼을 때 어떻게 동작하나요?
 - Redis를 스케일아웃 한다면 어떤 점들을 고려해야 하나요?
 
