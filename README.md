@@ -18,9 +18,9 @@
 ## 목차
 
 1. [기술면접 : CS 지식부터 프로젝트 기반 기술 면접까지](#기술-면접)
-   - CS
-       - [공통](#공통) , [Java](#1-1-java) , [Spring](#1-2-spring) , [JPA](#1-3-jpa) , [Database](#1-4-database) , [Network](#1-5-network) , [인프라/운영/안정성](#1-6-인프라운영안정성)
-   - 이력서 프로젝트 기반 질문 (개인 맞춤)
+    - CS
+        - [공통](#공통) , [Java](#1-1-java) , [Spring](#1-2-spring) , [JPA](#1-3-jpa) , [Database](#1-4-database) , [Network](#1-5-network) , [인프라/운영/안정성](#1-6-인프라운영안정성)
+    - 이력서 프로젝트 기반 질문 (개인 맞춤)
 2. [인성/컬쳐핏 면접 : 메타인지부터 조직문화 적합성까지](#인성-및-컬쳐핏-면접)
     - [인성 면접 준비 팁](#인성-면접-준비-팁)
         - [지원하는 회사의 가치관 및 인재상 파악](#지원하는-회사의-가치관-및-인재상-파악하기)
@@ -46,7 +46,6 @@
 
 <br/>
 
-
 ### 공통
 
 - 평소 기술 습득이나, 학습은 어떻게 하고 계신가요?
@@ -65,7 +64,6 @@
 - [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
 - [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
 - [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
-
 
 ### 1-1. Java
 
@@ -94,7 +92,8 @@
 - [의존성 주입 방식 비교](cs/spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
 - [Spring DI, IoC, AOP의 개념, **AOP의 내부 구현**](cs/spring/spring_di_ioc_aop.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
-- [**OpenFeign 외에 다른 HTTP Client를 사용해보았는지? 다른 것들과 비교했을 때 불편한 점은 무엇이 있을까요?**](https://velog.io/@dongvelop/Spring-Cloud-OpenFeign-%EB%A9%94%EB%89%B4%EC%96%BC-%EC%A0%95%EB%A6%AC-with-Spring-REST-Clients)
+- [**OpenFeign 외에 다른 HTTP Client를 사용해보았는지? 다른 것들과 비교했을 때 불편한 점은 무엇이 있을까요?
+  **](https://velog.io/@dongvelop/Spring-Cloud-OpenFeign-%EB%A9%94%EB%89%B4%EC%96%BC-%EC%A0%95%EB%A6%AC-with-Spring-REST-Clients)
 - [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](cs/spring/spring_feign.md)
 - [분산락(Distributed Lock) 개념 및 적용 방법](cs/spring/spring_lock.md)
 - [Spring Cloud Config Server의 장단점](cs/spring/spring_cloud_config.md)
@@ -113,7 +112,8 @@
 ### 1-4. Database
 
 - [SQL vs NoSQL , 하이브리드 아키텍처 설계](cs/database/db_sql_nosql.md)
-    - [**RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?**](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
+    - [**RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?
+      **](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
     - [**RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?**](cs/database/db_rdb_too_many_data.md)
 - [인메모리 DB가 더 빠른 이유](cs/database/db_inmemory.md)
 - [정규화/반정규화](cs/database/db_normalization.md)
@@ -459,20 +459,20 @@
 
 ### CS 지식 정리 시 참고하면 좋을 자료들
 
-- [정신차려 이 각박한 세상속에서](https://www.notion.so/f8114c9e2c774eccaca509f9618b7115?pvs=21)
-- [NKLCWDT/CS](https://github.com/NKLCWDT/cs)
-- [규글님](https://github.com/gyoogle/tech-interview-for-developer)
-- [한재엽님](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
-- [WeareSoft/tech-interview](https://github.com/WeareSoft/tech-interview)
-- [cheese10yun님 TIL](https://github.com/cheese10yun/TIL)
 - [남준이형 TIL](https://github.com/namjunemy/TIL)
 - [본인 TIL](https://github.com/2dongyeop/TIL)
-- [VSfe님](https://github.com/VSFe/Tech-Interview?tab=readme-ov-file)
+- [cheese10yun님 TIL](https://github.com/cheese10yun/TIL)
+- [정신차려 이 각박한 세상속에서](https://www.notion.so/f8114c9e2c774eccaca509f9618b7115?pvs=21)
 - [backtony/SW-Maestro-gjgs의 Tech 문서](https://github.com/backtony/SW-Maestro-gjgs/blob/master/TECH.md#-%EC%99%9C-%EC%9D%B4-%EA%B8%B0%EC%88%A0%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%96%88%EB%8A%94%EA%B0%80-)
 - [신입 백엔드 면접 질문 Ver. 2.0.7](https://velog.io/@yukina1418/%EC%B5%9C%EA%B7%BC-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%8B%A4%EB%8B%88%EB%A9%B4%EC%84%9C-%EB%B0%9B%EC%95%98%EB%8D%98-%EC%A7%88%EB%AC%B8%EB%93%A4)
 - [신입 개발자 기술면접 질문 모음](https://javanewbie.tistory.com/48)
 - [시스템 설계 면접 팁1](https://brunch.co.kr/@jihyun-um/43)
 - [시스템 설계 면접 팁2](https://deveric.tistory.com/105)
+- [규글님](https://github.com/gyoogle/tech-interview-for-developer)
+- [NKLCWDT/CS](https://github.com/NKLCWDT/cs)
+- [한재엽님](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+- [WeareSoft/tech-interview](https://github.com/WeareSoft/tech-interview)
+- [VSfe님](https://github.com/VSFe/Tech-Interview?tab=readme-ov-file)
 
 ### 인성 및 컬쳐핏 면접 준비 시 참고하면 좋을 자료들
 
@@ -480,12 +480,17 @@
 
 ### 이직 준비시 멘탈 관리
 
-- [바다쓰기님](https://xrabcde.github.io/moving-retrospection/)
-- [최홍희님](https://vvshinevv.tistory.com/108)
-- [카펀님](https://katfun.tistory.com/220)
-- [이호승님](https://github.com/leehosung/awesome-devteam)
-- [Greg Lee님](https://medium.com/@greg.shiny82/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-144a1fe28ca4)
+- [바다쓰기님 : 나의 첫번째 이직 회고, 5개월 간의 기록](https://xrabcde.github.io/moving-retrospection/)
+- [강승현님 : 퇴사를 고민하는 주니어에게,](https://imksh.com/128)
+- [최홍희님 : 카카오페이 경력 공채 합격 후기](https://vvshinevv.tistory.com/108)
+- 카펀님
+    - [세상은 넓고 잘하고 열심히 하는 사람은 많다.](https://vvshinevv.tistory.com/80)
+    - [카카오페이 백엔드 개발자 경력 이직기](https://katfun.tistory.com/220)
+- [태태태님 : 그런 개발자로 괜찮은가 - 취업편](https://taetaetae.github.io/posts/a-good-developer-in-terms-of-employment/)
+- [재호님 : 수비수 개발자](https://jeho.page/essay/2024/08/08/defense-fun.html)
+- [zzsza님 : 커리어 고민 상담을 하면서 많이 받은 고민 모음과 제 생각들](https://zzsza.github.io/diary/2025/02/16/career-advice/)
+- [이호승님 : 좋은 개발팀을 만드는데 도움이 되는 자료](https://github.com/leehosung/awesome-devteam)
+- [Greg Lee님 : 개발자 기술 면접](https://medium.com/@greg.shiny82/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-144a1fe28ca4)
 - [이직, 퇴사 체크리스트](https://velog.io/@hyperperi/%EC%9D%B4%EC%A7%81%ED%87%B4%EC%82%AC-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8)
-- [커리어 고민 상담을 하면서 많이 받은 고민 모음과 제 생각들](https://zzsza.github.io/diary/2025/02/16/career-advice/)
 
 
