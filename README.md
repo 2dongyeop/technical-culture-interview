@@ -4,7 +4,8 @@
 
 전 직원이 7명인 스타트업에서 유일한 서버 개발자로 근무하다, 토스로 이직하기까지의 준비 과정을 정리했습니다.
 
-여러 분야의 기본 개념들과 예상 면접 질문들로 이루어져 있으니, 아래 나열한 조건에 해당되시는 분들께 도움이 되셨으면 합니다. 
+여러 분야의 기본 개념들과 예상 면접 질문들로 이루어져 있으니, 아래 나열한 조건에 해당되시는 분들께 도움이 되셨으면 합니다.
+
 - 첫 커리어를 시작하는 신입 & 이직을 준비하는 주니어 서버 개발자
 - **서버 직군이 아니여도**, 컬쳐핏 면접을 앞두고 있는 개발자
 
@@ -16,8 +17,16 @@
 
 ## 목차
 
-1. [기술면접 : CS 지식부터 개인 프로젝트 기반 기술 면접까지](#기술-면접)
+1. [기술면접 : CS 지식부터 프로젝트 기반 기술 면접까지](#기술-면접)
+   - CS
+       - [공통](#공통) , [Java](#1-1-java) , [Spring](#1-2-spring) , [JPA](#1-3-jpa) , [Database](#1-4-database) , [Network](#1-5-network) , [인프라/운영/안정성](#1-6-인프라운영안정성)
+   - 이력서 프로젝트 기반 질문 (개인 맞춤)
 2. [인성/컬쳐핏 면접 : 메타인지부터 조직문화 적합성까지](#인성-및-컬쳐핏-면접)
+    - [인성 면접 준비 팁](#인성-면접-준비-팁)
+        - [지원하는 회사의 가치관 및 인재상 파악](#지원하는-회사의-가치관-및-인재상-파악하기)
+        - [가치관이 없으면 떨어진다.](#가치관이-없으면-떨어진다)
+        - [미리 생각을 정리해놓아야 할 대표 질문 목록](#미리-생각을-정리해놓아야-할-대표-질문-목록)
+    - [카테고리별 예상 질문 목록 세분화](#카테고리별-예상-질문-목록)
 3. [면접 마지막에 물어보면 도움될 질문 목록](#면접-마지막에-물어보면-도움될-질문-목록)
 4. [기타](#기타)
     - [이력서 작성 시 참고하면 좋을 자료들](#이력서-작성-시-참고하면-좋을-자료들)
@@ -36,6 +45,27 @@
 > - [CS 지식 정리 시 참고하면 좋을 자료들](#cs-지식-정리-시-참고하면-좋을-자료들)
 
 <br/>
+
+
+### 공통
+
+- 평소 기술 습득이나, 학습은 어떻게 하고 계신가요?
+- 최근에 관심있게 읽으신 기술서적이나 학습한 내용은 무엇인가요?
+- 기술블로그에 작성하신 내용 중, 가장 자신있는 내용을 저희에게 설명해주세요.
+- [모든 개발자가 알아야 할 SOLID 원칙](https://tech.kakaobank.com/posts/2411-solid-truth-or-myths-for-developers/)
+- [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
+    - [컴포지트 패턴을 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B3%B5%ED%95%A9%EC%B2%B4Composite-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0)
+    - [전략 패턴에 대해 알고 계신가요?](https://victorydntmd.tistory.com/292)
+    - [프록시 패턴에 대해 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%ED%94%84%EB%A1%9D%EC%8B%9CProxy-%ED%8C%A8%ED%84%B4-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
+    - [**사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.**](cs/spring/template_pattern.md)
+- [REST API vs gRPC](cs/network/network_rest_grpc.md)
+- [REST vs GraphQL](cs/network/network_rest_graphql.md)
+    - [REST API와 비교해서 GraphQL의 장단점을 설명해주세요.](cs/network/network_rest-graphql2.md)
+    - [GraphQL을 도입하지 않았던 이유에 대해 설명해주세요.](cs/network/network_not_graphql.md)
+- [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
+- [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
+- [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
+
 
 ### 1-1. Java
 
@@ -62,9 +92,9 @@
 - [Spring MVC와 디스패처 서블릿에 대해 설명해주세요.](cs/spring/spring_mvc.md)
 - [Spring Bean과 생명주기](cs/spring/spring_bean_%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
 - [의존성 주입 방식 비교](cs/spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
-- [Spring DI, IoC, AOP의 개념, AOP의 내부 구현](cs/spring/spring_di_ioc_aop.md)
+- [Spring DI, IoC, AOP의 개념, **AOP의 내부 구현**](cs/spring/spring_di_ioc_aop.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
-- [OpenFeign 외에 다른 HTTP Client를 사용해보았는지? 다른 것들과 비교했을 때 불편한 점은?](https://velog.io/@dongvelop/Spring-Cloud-OpenFeign-%EB%A9%94%EB%89%B4%EC%96%BC-%EC%A0%95%EB%A6%AC-with-Spring-REST-Clients)
+- [**OpenFeign 외에 다른 HTTP Client를 사용해보았는지? 다른 것들과 비교했을 때 불편한 점은 무엇이 있을까요?**](https://velog.io/@dongvelop/Spring-Cloud-OpenFeign-%EB%A9%94%EB%89%B4%EC%96%BC-%EC%A0%95%EB%A6%AC-with-Spring-REST-Clients)
 - [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](cs/spring/spring_feign.md)
 - [분산락(Distributed Lock) 개념 및 적용 방법](cs/spring/spring_lock.md)
 - [Spring Cloud Config Server의 장단점](cs/spring/spring_cloud_config.md)
@@ -83,11 +113,11 @@
 ### 1-4. Database
 
 - [SQL vs NoSQL , 하이브리드 아키텍처 설계](cs/database/db_sql_nosql.md)
-    - [RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
-    - [RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?](cs/database/db_rdb_too_many_data.md)
+    - [**RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?**](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
+    - [**RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?**](cs/database/db_rdb_too_many_data.md)
 - [인메모리 DB가 더 빠른 이유](cs/database/db_inmemory.md)
 - [정규화/반정규화](cs/database/db_normalization.md)
-- [인덱스란?](cs/database/db_index.md)
+- [**인덱스란?**](cs/database/db_index.md)
     - [**인덱스가 있음에도 성능이 더 느린 경우가 있다. 이에 대해 설명해보시오.**](cs/database/db_index_invalid.md)
     - [**LIKE 연산자가 인덱스를 사용하지 않는 이유**](cs/database/like_not_using_index.md)
     - [DB 인덱스가 어떤 자료구조로 이루어져 있어서, 성능을 향상시키나요?](cs/database/db_index_data_structure.md)
@@ -117,32 +147,14 @@
 - [APM 활용 방안](cs/infra/infra_apm.md)
 - [배포 전략: 카나리, 블루-그린, 롤링 배포 비교](cs/infra/infra_deploy.md)
 
-### 1-7. 공통
-
-- 평소 기술 습득이나, 학습은 어떻게 하고 계신가요?
-- 최근에 관심있게 읽으신 기술서적이나 학습한 내용은 무엇인가요?
-- 기술블로그에 작성하신 내용 중, 가장 자신있는 내용을 저희에게 설명해주세요.
-- [모든 개발자가 알아야 할 SOLID 원칙](https://tech.kakaobank.com/posts/2411-solid-truth-or-myths-for-developers/)
-- [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
-    - [컴포지트 패턴을 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B3%B5%ED%95%A9%EC%B2%B4Composite-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0)
-    - [전략 패턴에 대해 알고 계신가요?](https://victorydntmd.tistory.com/292)
-    - [프록시 패턴에 대해 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%ED%94%84%EB%A1%9D%EC%8B%9CProxy-%ED%8C%A8%ED%84%B4-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
-    - [사용해보신 디자인 패턴에 사례를 설명해주시고, 장단점을 설명해주세요.](cs/spring/template_pattern.md)
-- [**REST API vs gRPC**](cs/network/network_rest_grpc.md)
-- [**REST vs GraphQL**](cs/network/network_rest_graphql.md)
-    - [REST API와 비교해서 GraphQL의 장단점을 설명해주세요.](cs/network/network_rest-graphql2.md)
-    - [GraphQL을 도입하지 않았던 이유에 대해 설명해주세요.](cs/network/network_not_graphql.md)
-- [Layered Architecture & Hexagonal Architecture](cs/spring/spring_architecture.md)
-- [**Monolithic & MSA**](cs/spring/spring_monolithic_msa.md)
-- [트랜잭션 관리가 어려운 분산 환경에서 일관성을 보장하기 위한 방법은 무엇인가요?](cs/spring/spring_atomic.md)
-
 <br/>
 
 ## 2. 프로젝트 경험
 
 > ### 안내
 > 개인 프로젝트 경험 관련
-> 내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
+>
+내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
 > 를 기반으로 키워드를 추출하여 작성했습니다.
 >
 > 개인적인 경험이다보니 겹치는 내용은 없겠지만, **문제를 어떻게 파악하고 어떤 고민을 통해 어떻게 해결했는지 등을 참고하시는 데에 도움이 되었으면 합니다.**
@@ -306,7 +318,7 @@
 
 <br/>
 
-### 대표 질문 목록
+### 미리 생각을 정리해놓아야 할 대표 질문 목록
 
 1. 이전에 경험했던 조직문화 중 가장 잘 맞았던 조직문화 & 잘 맞지 않았던 조직 문화는 무엇인가요?
     - **잘 맞았던 조직 문화 : 지원하는 회사의 문화와 유사한 경험을 강조**
