@@ -1,15 +1,16 @@
 # technical-interview
 
 ## 개요
-- 전 직원이 7명인 스타트업에서 유일한 서버개발자로 근무하다, 토스로 이직하기까지
-- 이직을 준비하면서 복기했던 개념들과 준비했던 예상 면접 질문들입니다.
-- 모두 행복하세요.
+
+전 직원이 7명인 스타트업에서 유일한 서버 개발자로 근무하다, 토스로 이직하기까지의 준비 과정을 정리했습니다.
+
+여러 분야의 기본 개념들과 예상 면접 질문들로 이루어져 있으니, 아래 나열한 조건에 해당되시는 분들께 도움이 되셨으면 합니다. 
+- 첫 커리어를 시작하는 신입 & 이직을 준비하는 주니어 서버 개발자
+- **서버 직군이 아니여도**, 컬쳐핏 면접을 앞두고 있는 개발자
 
 <br/>
 
-## 대상 독자
-- 첫 커리어를 시작하는 신입 & 이직을 준비하는 주니어
-- 중니어부터 시니어에 해당하시는 분들에게는 도움되지 않을 수 있습니다.
+모두 행복하세요.
 
 <br/>
 
@@ -17,7 +18,7 @@
 
 1. [기술면접 : CS 지식부터 개인 프로젝트 기반 기술 면접까지](#기술-면접)
 2. [인성/컬쳐핏 면접 : 메타인지부터 조직문화 적합성까지](#인성-및-컬쳐핏-면접)
-3. [면접관 역질문](#면접관-역질문-리스트)
+3. [면접 마지막에 물어보면 도움될 질문 목록](#면접-마지막에-물어보면-도움될-질문-목록)
 4. [기타](#기타)
     - [이력서 작성 시 참고하면 좋을 자료들](#이력서-작성-시-참고하면-좋을-자료들)
     - [CS 지식 정리 시 참고하면 좋을 자료들](#cs-지식-정리-시-참고하면-좋을-자료들)
@@ -29,26 +30,25 @@
 # 기술 면접
 
 ## 1. CS
+
 > 아래에 나올 CS 항목들은 필자가 "스스로 개념을 정리할 필요가 있는 항목들을 수집한 내용"입니다. <br/>
-> 보시는 분들도 자신이 어느 파트가 공부해야 할 지 찾아보고,  필요한 항목들을 수집하여 면접을 준비하시면 좋을 것 같습니다. <br/>
+> 보시는 분들도 자신이 어느 파트가 공부해야 할 지 찾아보고, 필요한 항목들을 수집하여 면접을 준비하시면 좋을 것 같습니다. <br/>
 > - [CS 지식 정리 시 참고하면 좋을 자료들](#cs-지식-정리-시-참고하면-좋을-자료들)
 
 <br/>
 
 ### 1-1. Java
 
-- [알아두면 좋을 JVM Option](cs/java/jvm_options.md)
+- [**알아두면 좋을 JVM Option**](cs/java/jvm_options.md)
 - [**JVM 옵션에서 Xmx, Xms를 동일하게 설정하는 이유**](cs/java/java_jvm_xmx_xms.md)
-- [Java의 Object 클래스의 Equals() 메서드와 HashCode() 메서드가 무슨 목적인지 설명해주세요.](cs/java/java_equals_hascode.md)
+- [**Java의 Object 클래스의 Equals() 메서드와 HashCode() 메서드가 무슨 목적인지 설명해주세요.**](cs/java/java_equals_hascode.md)
 - [자료구조 및 Java 컬렉션. with 동적 크기 조정](cs/java/java_%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%BB%AC%EB%A0%89%EC%85%98.md)
 - [추상클래스와 인터페이스의 차이](cs/java/java_%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
 - [volatile 키워드는 무엇이고 언제 사용하나요?](cs/java/java_volatile.md)
 - [synchronized 와 ReentrantLock](cs/java/java_synchronized_ReentrantLock.md)
 - [**Synchronized는 어떤 내부 원리로 락을 동작시키는지 설명해주세요.**(뮤텍스락)](cs/java/how_synchronized.md)
-    - [뮤텍스와 세마포어](cs/java/mutex_semaphore.md)
-- [**ConcurrentHashMap은 내부적으로 어떻게 동시성 이슈를 해결했는지 아시나요?**(CAS)](cs/java/how_concurrenthashmap.md)
-- [Atomic은 Thread-Safe한 클래스인지? 그리고 내부적으로 어떻게 구현되어 있는지 아시나요?(CAS)](cs/java/how_atomic.md)
-- [ThreadLocal](cs/java/java_threadlocal.md)
+- [**ConcurrentHashMap과 Atomic 클래스들은 내부적으로 어떻게 동시성 이슈를 해결했는지 아시나요?**(CAS)](cs/java/how_concurrenthashmap.md)
+- [ThreadLocal 이란?](cs/java/java_threadlocal.md)
 - [GC 별 특징 및 구조, 동작 과정](cs/java/java_gc.md)
 - [비동기 처리 및 스레드 관리](cs/java/java_async.md)
 - [스레드 상태에 대해 설명해주세요. 혹시 TIMED_WATING이랑 WAITING의 차이를 아시나요?](cs/java/thread_status.md)
@@ -59,12 +59,10 @@
 
 ### 1-2. Spring
 
-- [Spring MVC란?](cs/spring/spring_mvc.md)
-- [디스패처 서블릿에 대해 설명해주세요.](cs/spring/spring_dispatcherservlet.md)
+- [Spring MVC와 디스패처 서블릿에 대해 설명해주세요.](cs/spring/spring_mvc.md)
 - [Spring Bean과 생명주기](cs/spring/spring_bean_%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
 - [의존성 주입 방식 비교](cs/spring/spring_%EC%9D%98%EC%A1%B4%EC%84%B1%EC%A3%BC%EC%9E%85.md)
-- [Spring DI, IoC, AOP](cs/spring/spring_di_ioc_aop.md)
-    - [AOP에 대해 설명해주세요. 그리고 내부 구현에 대해 설명해주세요.](cs/spring/spring_aop.md)
+- [Spring DI, IoC, AOP의 개념, AOP의 내부 구현](cs/spring/spring_di_ioc_aop.md)
 - [Spring Boot 2.x와 3.x의 주요 차이점](cs/spring/spring_boot_2_3.md)
 - [OpenFeign 외에 다른 HTTP Client를 사용해보았는지? 다른 것들과 비교했을 때 불편한 점은?](https://velog.io/@dongvelop/Spring-Cloud-OpenFeign-%EB%A9%94%EB%89%B4%EC%96%BC-%EC%A0%95%EB%A6%AC-with-Spring-REST-Clients)
 - [마이크로서비스 간 통신에서 Feign Client를 사용시 주의점](cs/spring/spring_feign.md)
@@ -85,20 +83,18 @@
 ### 1-4. Database
 
 - [SQL vs NoSQL , 하이브리드 아키텍처 설계](cs/database/db_sql_nosql.md)
+    - [RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
+    - [RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?](cs/database/db_rdb_too_many_data.md)
+- [인메모리 DB가 더 빠른 이유](cs/database/db_inmemory.md)
 - [정규화/반정규화](cs/database/db_normalization.md)
 - [인덱스란?](cs/database/db_index.md)
-- [인메모리 DB가 더 빠른 이유](cs/database/db_inmemory.md)
-- [**인덱스가 있음에도 성능이 더 느린 경우가 있다. 이에 대해 설명해보시오.**](cs/database/db_index_invalid.md)
-- [**LIKE 연산자가 인덱스를 사용하지 않는 이유**](cs/database/like_not_using_index.md)
-- [B+Tree가 검색에 효과적인 이유를 아시나요?](cs/database/b_tree.md)
-- [DB 인덱스가 어떤 자료구조로 이루어져 있어서, 성능을 향상시키나요?](cs/database/db_index_data_structure.md)
+    - [**인덱스가 있음에도 성능이 더 느린 경우가 있다. 이에 대해 설명해보시오.**](cs/database/db_index_invalid.md)
+    - [**LIKE 연산자가 인덱스를 사용하지 않는 이유**](cs/database/like_not_using_index.md)
+    - [DB 인덱스가 어떤 자료구조로 이루어져 있어서, 성능을 향상시키나요?](cs/database/db_index_data_structure.md)
 - [MySQL InnoDB의 기본 격리 수준이 어떻게 될까요?](cs/database/db_default_isolation_level.md)
 - [Dirty Read, Non-Repeatable Read, Phantom Read, Gap Lock](cs/database/db_mysql_gaplock.md)
 - [**MySQL MVCC 방식과 Undo Log에 대해 설명해주세요.**](cs/database/db_mysql_mvcc.md)
 - [비관적 락과 낙관적 락에 대해 설명해주세요.](cs/database/db_lock.md)
-- [RDBMS는 어떤 이유로 NoSQL보다 읽기 성능이 좋을까요? 반대로, NoSQL은 어떤 이유로 쓰기 성능이 좋을까요?](cs/database/why_rdb_better_than_nosql_and_why_nosql_better_than_rdb..md)
-- [RDBMS에서 데이터가 많이 적재되면 무슨 문제가 발생하나요?](cs/database/db_rdb_too_many_data.md)
-- [RDB에서는 쓰기 성능을 어느 정도 희생하면서라도 읽기 성능을 극대화하기 위해 어떤 일들을 할까요?](cs/database/db_rdbms_sacrifice.md)
 - Redis는 메모리가 가득 찼을 때 어떻게 동작하나요?
 - Redis를 스케일아웃 한다면 어떤 점들을 고려해야 하나요?
 
@@ -123,6 +119,9 @@
 
 ### 1-7. 공통
 
+- 평소 기술 습득이나, 학습은 어떻게 하고 계신가요?
+- 최근에 관심있게 읽으신 기술서적이나 학습한 내용은 무엇인가요?
+- 기술블로그에 작성하신 내용 중, 가장 자신있는 내용을 저희에게 설명해주세요.
 - [모든 개발자가 알아야 할 SOLID 원칙](https://tech.kakaobank.com/posts/2411-solid-truth-or-myths-for-developers/)
 - [Spring boot에서의 싱글톤 패턴과 이외 디자인 패턴](cs/spring/spring_singleton.md)
     - [컴포지트 패턴을 알고 계신가요?](https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EB%B3%B5%ED%95%A9%EC%B2%B4Composite-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0)
@@ -146,7 +145,7 @@
 > 내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
 > 를 기반으로 키워드를 추출하여 작성했습니다.
 >
-> 개인적인 경험이다보니 겹치는 내용은 없겠지만, 문제를 어떻게 파악하고 어떤 고민을 통해 어떻게 해결했는지 등을 참고하시는 데에 도움이 되었으면 합니다.
+> 개인적인 경험이다보니 겹치는 내용은 없겠지만, **문제를 어떻게 파악하고 어떤 고민을 통해 어떻게 해결했는지 등을 참고하시는 데에 도움이 되었으면 합니다.**
 >
 >
 > ### 답변 팁
@@ -159,22 +158,25 @@
 
 - [신기능 개발 시에 개발 프로세스와 각 단계별 역할을 설명해주세요.](project/common/develop_process.md)
 - [**Retry 정책을 설계할 때 고려사항**](cs/spring/spring_retry.md)
-- [테스트 코드 작성 원칙 및 전략이 있는지?](project/common/test_code.md)
 - [여러 부하 테스트 툴(nGrinder, JMeter, k6, Locust) 중에서 nGrinder를 선택한 이유](project/common/load_test.md)
 - [여러 APM 툴(Pinpoint, Datadog, Jaeger, New Relic, Zipkin) 중 Pinpoint을 선택한 이유](project/common/apm.md)
 - 컴파일러를 모르는 사람이라고 가정하고, 저에게 JIT 컴파일러에 대해 설명해주세요. (상세 레벨 조절에 따른 성능 향상 이유)
 - 프로젝트 경험 중, 가장 해결하기 어려웠거나 실패한 경험을 말해주세요. 그리고 어떻게 해결했으며, 해결하지 못했다면 어떤 대처를 해야할 지 말해주세요.
+- 근무하시는 동안 다양한 기술적 한계들을 맞이하실 수도 있을 것 같은데, 최선을 다해 어려움 & 기술적 한계를 극복한 사례가 있으신가요?
+- 프로젝트 중 실패 경험이 있으시다면 어떤게 있을까요? 만약 다시 돌아간다면 어떤 선택을 하실건가요?
+- (성공적으로 마무리한 특정 프로젝트를 지정) 다시 돌아간다면, 어떤 점들을 더 개선할 수 있을까요?
+- [만약에 알림 서버를 구축한다고 하면, 컴포넌트별로 어떻게 아키텍처를 설계하실지 궁금한데, 그림으로 설명해주시겠어요?](https://github.com/Meet-Coder-Study/book-system-design-interview/blob/master/10%EC%9E%A5/%5B7%EC%A3%BC%EC%B0%A8%5D_10%EC%9E%A5_%EC%95%8C%EB%A6%BC%20%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%B5%9C%EC%A0%95%EA%B7%A0.md)
 
 ### 2-2. 문자 전송 클라이언트 변경
 
 - [DB Agent 방식 vs API 방식 비교](project/2-2/db_agent_api.md)
-- [여러 문자 전송 플랫폼 중, NCP를 선택한 이유](project/2-2/ncp.md)
 - [OpenFeign과 Reactive Feign 비교. 비동기 전송이 목적일 때, WebClient를 제외한 이유는? 그리고 Reactive Feign의 단점.](project/2-2/reactive_feign.md)
 - [문자 전송 성능이 200ms → 9ms로 개선된 과정은 어떻게 이루어졌나요?](project/2-2/reactive_feign_perform.md)
     - [**`@Async` 애너테이션이 완벽한 비동기가 아닌 이유에 대해 자세히 설명해주세요.**](project/2-2/why_async_not_full_async.md)
     - [Netty의 이벤트 루프(Event Loop) 모델에 대해 설명해주세요.](project/2-2/netty_event_loop.md)
     - [**논블로킹 형태의 클라이언트를 사용해서 성능을 개선하신 것 같은데.. 그럼 만약에 스레드풀을 충분히 많은 양으로 설정해놓았다면, 지금 개선하신 방식과 어떤 차이가 있을까요? 스레드풀의 크기가 클 경우에
       발생하는 문제점은 무엇일까요?**](project/2-2/non-blocking_threadpool.md)
+    - 200ms, 9ms라고 말씀하신 Latency는 어떤 기준으로 어떻게 측정하신건가요?
 - [**동기랑 비동기. 그리고 블로킹이랑 논블로킹에 대해 설명해주세요.**](project/2-2/sync_async_block_nonblock.md)
     - [**블로킹 함수를 사용하면서, 비동기로 개발할 수 있나요? 가능하다면, 예시를 들어 설명해주세요.**](project/2-2/blocking_async_combination.md)
 
@@ -400,7 +402,7 @@
 
 <br/>
 
-# 면접관 역질문 리스트
+# 면접 마지막에 물어보면 도움될 질문 목록
 
 ### 업무 및 개발 프로세스 관련
 
