@@ -153,8 +153,7 @@
 
 > ### 안내
 > 개인 프로젝트 경험 관련
->
-내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
+> 내용은 [첨부한 이력서](https://github.com/2dongyeop/technical-interview/blob/main/resource/%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%9D%B4%EB%8F%99%EC%97%BD_%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C.pdf)
 > 를 기반으로 키워드를 추출하여 작성했습니다.
 >
 > 개인적인 경험이다보니 겹치는 내용은 없겠지만, **문제를 어떻게 파악하고 어떤 고민을 통해 어떻게 해결했는지 등을 참고하시는 데에 도움이 되었으면 합니다.**
