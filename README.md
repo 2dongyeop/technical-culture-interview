@@ -1,4 +1,4 @@
-# technical-interview
+# technical-culture-interview
 
 ## 개요
 
